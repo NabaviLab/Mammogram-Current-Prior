@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: #ECEFF1;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_prior">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>110</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: #B0BEC5;
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_current">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>110</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: #B0BEC5;
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_heatmap">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>110</y>
+     <width>300</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: #B0BEC5;
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PriorImage">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>430</y>
+     <width>301</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #E91E63;
+    color: #FAFAFA;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+QPushButton:hover {
+    background-color: #EC407A;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Uploade Prior Image</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CurrentImage">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>430</y>
+     <width>301</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #E91E63;
+    color: #FAFAFA;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+QPushButton:hover {
+    background-color: #EC407A;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Upload Current Image</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="GenerateHeatmap">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>430</y>
+     <width>301</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #E91E63;
+    color: #FAFAFA;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+QPushButton:hover {
+    background-color: #EC407A;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Generate Heatmap</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RemoveArtifactsPrior">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>470</y>
+     <width>301</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #E91E63;
+    color: #FAFAFA;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+QPushButton:hover {
+    background-color: #EC407A;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Remove Artifacts</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RemoveArtifactsCurrent">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>470</y>
+     <width>301</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #E91E63;
+    color: #FAFAFA;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+QPushButton:hover {
+    background-color: #EC407A;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Remove Artifacts</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RunTheModel">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>470</y>
+     <width>301</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #E91E63;
+    color: #FAFAFA;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+QPushButton:hover {
+    background-color: #EC407A;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Run the Model</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ResultSection">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>560</y>
+     <width>661</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
